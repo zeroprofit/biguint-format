@@ -17,7 +17,8 @@
         'dec': toDecimalString,
         'hex': toHexString,
         'bin': toBinaryString,
-        'oct': toOctetString
+        'oct': toOctetString,
+        'b64': toBase64String
     };
 
     module.exports = function (buffer, base, options) {
@@ -48,6 +49,10 @@
             buf = new Buffer(object);
         }
         return buf;
+    }
+ 
+    function toBase64String(buffer, options) {
+      return Buffer.from(buffer).toString('base64);
     }
 
     function toDecimalString(buffer, options) {
