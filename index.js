@@ -52,7 +52,7 @@
     }
  
     function toBase64String(buffer, options) {
-      return Buffer.from(buffer).toString('base64);
+      return Buffer.from(buffer).toString('base64');
     }
 
     function toDecimalString(buffer, options) {
