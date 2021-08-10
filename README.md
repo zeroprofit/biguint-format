@@ -54,6 +54,7 @@ The `format` argument represents output string format and it can be one of the f
 * `bin` - conversion to binary format e.g. `1100101010`
 * `hex` - conversion to hexadecimal format e.g. `0xADFFAA11`
 * `oct` - conversion to octet format e.g. `07771`
+* `b64` - conversion to base64 format e.g. `8xjIna+/`
 
 If `format` argument is missing, `dec` format is used as a default option. Note that you will have to specify format if you would like to use `options` argument.
 
